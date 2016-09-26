@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<title>	My web page </title>
+	<title>	Implementing Bootstrap </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,25 +22,26 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Bootstrap Learn</a>
+				<a class="navbar-brand" href="#">Learning Bootstrap</a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="page2.html">About</a></li>
-					<li><a href="page3.html">Contact</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					
 
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="#carrier-obj">Carrier Objective</a></li>
+							<li><a href="#academics">Academic Qualification</a></li>
+							<li><a href="#computer">Computer Literacy</a></li>
+							<li><a href="#technical-skill">Technical Skill</a></li>
+							<li><a href="#projects">Projects & Works</a></li>
+							<li><a href="#lang-skill">Language Skill</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
+							<li><a href="#personal-info">Personal Info</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -64,7 +65,7 @@
 	<!--Header end-->
 
 	<!--Carrier objective start-->
-	<div class="container">
+	<div class="container" id="carrier-obj">
 		<h3>Career Objective:</h3>
 		<p>To work in such an environment where I can enhance my technical skill and knowledge through hard work and creativity so that, I can contribute to the success of the company.</p>
 
@@ -73,7 +74,7 @@
 
 	<!--Academic qualification start -->
 	
-	<div class="container">
+	<div class="container" id="academics">
 		<h3> Academic Qualification : </h3>
 
 		<div class="table-responsive">
@@ -119,7 +120,7 @@
 
 	<!-- Computer literacy start -->
 
-	<div class="container">
+	<div class="container" id="computer">
 		<h3>Computer Literacy</h3>
 		<dl class="dl-horizontal">
 			<dt>Operating Systems:</dt>
@@ -136,7 +137,7 @@
 	<!-- Computer literacy end -->
 
 	<!--Technical skill begin -->
-	<div class="container">
+	<div class="container" id="technical-skill">
 		<div class="row ">
 			<div class="col-md-6 col-xs-6 ">
 				<h3>Technical Skill</h3>
@@ -176,7 +177,7 @@
 
 	<!--Projects and work begin-->
 
-	<div class="container">
+	<div class="container" id="projects">
 		<h3>Projects and Works</h3>
 
 		<h4><strong>Thesis Project:</strong></h4>
@@ -199,7 +200,9 @@
 
 	<!--Projects and work end-->
 
-	<div class="container">
+	<!--Language skill begin-->
+
+	<div class="container" id="lang-skill">
 
 	<h3>Language Skill</h3>
 		<div class="progress">
@@ -221,9 +224,9 @@
 			</div>
 		</div>
 	</div>
+<!--Language skill end -->
 
-
-	<div class="container">
+	<div class="container" id="personal-info">
 		<h3>Personal Info</h3>
 		<dl class="dl-horizontal">
 			<dt>Father’s Name:</dt>
